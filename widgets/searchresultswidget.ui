@@ -46,7 +46,7 @@
     </layout>
    </item>
    <item>
-    <widget class="QScrollArea" name="resultsLayout">
+    <widget class="QScrollArea" name="resultsScrollArea">
      <property name="sizePolicy">
       <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
        <horstretch>0</horstretch>
@@ -59,7 +59,7 @@
      <property name="alignment">
       <set>Qt::AlignCenter</set>
      </property>
-     <widget class="QWidget" name="scrollAreaWidgetContents">
+     <widget class="QWidget" name="resultsContent">
       <property name="geometry">
        <rect>
         <x>0</x>
@@ -68,6 +68,11 @@
         <height>342</height>
        </rect>
       </property>
+      <layout class="QVBoxLayout" name="verticalLayout_3">
+       <item>
+        <layout class="QVBoxLayout" name="resultsLayout"/>
+       </item>
+      </layout>
      </widget>
     </widget>
    </item>

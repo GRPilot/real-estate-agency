@@ -19,6 +19,7 @@ message(STATUS "Build directory: ${PROJECT_BINARY_DIR}")
 
 include_directories(
     widgets/
+    widgets/searchresultbuilder/
     resources/
 )
 
@@ -26,9 +27,9 @@ set(PROJECT_SOURCES
     main.cpp
     mainwindow.cpp
     widgets/searchresultswidget.cpp
-    widgets/searchresultsrecordbuilder.cpp
     widgets/searchwidget.cpp
     widgets/widgetmanager.cpp
+    widgets/searchresultbuilder/searchresultbuilder.cpp
     resources.qrc
 )
 set(PROJECT_HEADERS
@@ -37,6 +38,7 @@ set(PROJECT_HEADERS
     widgets/searchresultswidget.h
     widgets/searchwidget.h
     widgets/widgetmanager.h
+    widgets/searchresultbuilder/searchresultbuilder.h
 )
 set(PROJECT_UI
     mainwindow.ui
